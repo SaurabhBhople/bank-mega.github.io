@@ -91,8 +91,8 @@
 }
 
 .content h1{
-    font-size: 400%;
-    margin-top: 80px;
+    font-size: 50px;
+    margin-top: 90px;
 }
 
 .content p{
@@ -172,7 +172,7 @@ button:hover{
     position: absolute;
     margin-top: 10px;
     top: 130%;
-    height: 30%;
+    height: 35%;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(contact.jpg);
     
     text-align: center;
@@ -225,6 +225,7 @@ button:hover{
     height: 15%;
     background-color: black;
     padding-top: 5pt;
+    position: relative;
 }
 .rights:hover{
     color: red;
