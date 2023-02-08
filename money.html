@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Bank Mega</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="./file/css/money.css">
+</head>
+<body  class="banner">
+    <header>
+        <div class="navbar">
+            <img class="title_img" src="title.png">
+            <!-- <h2 class="title">Sarthi <br>Bank</h2> -->
+            <ul>
+                <li><a href="index.html" active>Home</a></li>
+                <li><a href="index.html #aboutUs">About</a></li>
+                <li><a href="money.html" class="active">Transfer Money</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Payment Form -->
+    <main>
+        <div id="dashboard" class="mt-5 container">
+            <div class="d-flex justify-content-center">
+                <div class="col-md-3 bg-primary ms-5 p-4 rounded bg-opacity-10">
+                    <h2>Deposit</h2>
+                    <img class="image" src="deposit.png">
+                    <p class="fs-3">
+                        $ <span id="deposit">0</span>
+                    </p>
+                </div>
+                <div class="col-md-3 bg-success ms-5 p-4 rounded">
+                    <h2>Withdraw</h2>
+                    <img class="image" src="withdrawal.png">
+                    <p class="fs-3">
+                        $ <span id="withdraw">0</span>
+                    </p>
+                </div>
+                <div class="col-md-3 bg-warning ms-5 p-4 rounded">
+                    <h2>Balance</h2>
+                    <img class="image" src="balance.png">
+                    <p class="fs-3">
+                        $ <span id="balance">1000</span>
+                    </p>
+                </div> 
+            </div>
+            <div id="input-section" class="mt-5 d-flex justify-content-center">
+            <div class="col-md-5 container bg-white p-2 text-dark ">
+                <h3>Deposit</h3>
+                <input type="text" id="senderName" class="form-control" placeholder="Sender Name"/>
+                <input type="number" class="form-control" id="deposit-input" placeholder="Deposit">
+                <br>
+                <button class="btn" id="deposit-btn">Deposit</button>
+            </div>
+            <div class="col-md-5 container bg-white rounded shadow p-4">
+                <h3>Withdraw</h3>
+                <input type="text" id="reciverName" class="form-control" placeholder="Reciever Name"/>
+                <input type="number" class="form-control" id="withdraw-input" placeholder="Withdraw">
+                <br>
+                <button class="btn" id="withdraw-btn">Withdraw</button>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="rights">@2022-23 Bank All rights reserve</div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./file/js/money.js"></script>
+</body>
+</html>

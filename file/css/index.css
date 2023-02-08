@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 130vh;
+    background-image: linear-gradient(rgba(43, 10, 10, 0.5),rgba(229, 166, 245, 0.75)),url(Home_back.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- Nav Section Start --- */
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title{
+    width: auto;
+    font-size: 200%;
+    cursor: pointer;
+    color: gold;
+    position: absolute;
+    margin: 15%;
+}
+
+.title_img{
+    width: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    width: auto;
+    list-style: none;
+    display: inline-block;
+    margin: 15px 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #4df8e7;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+.navbar ul li active::after{
+    background: #4df8e7;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    width: 100;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar ul li .active{
+    color: white;
+    padding: 10px 7px;
+    background-color: black;
+}
+/* --- Nav Section End --- */
+
+/* --- Main Section Start---- */
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    font-size: 400%;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100%;
+    line-height: 25px;
+}
+
+button{
+    width:200px;
+    padding: 20px 0;
+    text-align: center;
+    margin: 20px 20px;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: larger;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: visible;
+}
+
+span{
+    background-color: #009688;
+    height: 100%;
+    margin: -20px auto 0;
+    width: 0;
+    border-radius: 35px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+} 
+
+.contact-us{
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    text-align: center;
+    height: 43%;
+    background-color: rgb(245, 191, 120);
+    
+}
+
+.contact-us h2{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.contact-us p{
+    margin: 10px auto;
+    font-size: 20px;
+    line-height: 25px;
+    color: black;
+}
+
+.contact-us .contact-us_btn{
+    background-color: black;
+    z-index: 3;
+}
+/* --- Main Section End ---- */
+
+/* --- Footer Section Start --- */
+.footer{
+    width: 100%;
+    position: absolute;
+    margin-top: 10px;
+    top: 130%;
+    height: 30%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(contact.jpg);
+    
+    text-align: center;
+}
+.footer h2 {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.footer .aboutUs p {
+    color: white;
+    font-size: 20px;
+}
+.footer .aboutUs p:hover {
+    color: rgb(134, 129, 146);
+    font-size: 20px;
+}
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 30px;
+    align-items: center;
+}
+.social-media li a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #00a3f5;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 0.7rem;
+}
+.social-media li a:hover {
+    background: #012a46;
+}
+.social-media li a .fa:hover {
+    color: #f00;
+}
+.rights{
+    margin-top: 15px;
+    color: white;
+    height: 15%;
+    background-color: black;
+    padding-top: 5pt;
+}
+.rights:hover{
+    color: red;
+}
